@@ -25,3 +25,8 @@ Abriendo el [main.c](main.c), vamos a realizar lo siguiente:
 ## 1.3 ENTREGA DE LA ACTIVIDAD
 
 La entrega de la actividad se hace en un repositorio individual de GitHub que se deberá entregar en la tarea correspondiente en Classroom donde será calificada. La actividad tiene un parcialito asociado que se debe completar y aprobar.
+
+## 1.4 Anotaciones
+
+no habia un lcd asi que tuvimos que muestrearlo en la consola
+el lm35 en vez de termistor
