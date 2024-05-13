@@ -29,4 +29,5 @@ La entrega de la actividad se hace en un repositorio individual de GitHub que se
 ## 1.4 Anotaciones
 
 no habia un lcd asi que tuvimos que muestrearlo en la consola
+
 el lm35 en vez de termistor
