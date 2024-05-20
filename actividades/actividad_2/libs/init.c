@@ -41,8 +41,16 @@ struct repeating_timer timer;
   // Inicializo el GPIO del potenciometro como entrada analogica
   adc_gpio_init(SP_GPIO);
   // Inicializacion de PWM
+  gpio_set_function(14, GPIO_FUNC_PWM);
+  gpio_set_function(15, GPIO_FUNC_PWM);
+  uint8_t slice = pwm_gpio_to_slice_num(7);
   // - 100 Hz de frecuencia
+  pwm_config config = pwm_get_default_config();
+  pwm_config_set_clkdiv(&config, 1250000);
   // - Ancho de pulso inicial del 0%
+  pwm_config_set_wrap(&config, 50000);
+  pwm_init(slice, &config, true);
+  pwm_set_gpio_level(GPIO, 0);
 
 }
 
